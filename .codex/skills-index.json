@@ -3,7 +3,7 @@
   "name": "claude-code-skills",
   "description": "Production-ready skill packages for AI agents - Marketing, Engineering, Product, C-Level, PM, and RA/QM",
   "repository": "https://github.com/alirezarezvani/claude-skills",
-  "total_skills": 356,
+  "total_skills": 357,
   "skills": [
     {
       "name": "business-growth-skills",
@@ -1267,15 +1267,15 @@
     },
     {
       "name": "run",
-      "source": "../../engineering/agenthub/skills/run",
-      "category": "engineering-advanced",
-      "description": "One-shot lifecycle command that chains init \u2192 baseline \u2192 spawn \u2192 eval \u2192 merge in a single invocation. Use when the user runs /hub:run or asks to execute a full AgentHub competition end-to-end."
-    },
-    {
-      "name": "run",
       "source": "../../engineering/autoresearch-agent/skills/run",
       "category": "engineering-advanced",
       "description": "Run a single experiment iteration. Edit the target file, evaluate, keep or discard. Use when the user runs /ar:run or asks for one manual autoresearch iteration."
+    },
+    {
+      "name": "run",
+      "source": "../../engineering/agenthub/skills/run",
+      "category": "engineering-advanced",
+      "description": "One-shot lifecycle command that chains init \u2192 baseline \u2192 spawn \u2192 eval \u2192 merge in a single invocation. Use when the user runs /hub:run or asks to execute a full AgentHub competition end-to-end."
     },
     {
       "name": "runbook-generator",
@@ -1326,6 +1326,12 @@
       "description": "Validate, test, and score the quality of skills within the claude-skills ecosystem. Comprehensive meta-skill: structure validation, Python script testing (syntax + imports + runtime + output format), multi-dimensional quality scoring with letter grades and tier classification (BASIC/STANDARD/POWERFUL). Use when authoring a new skill, auditing existing skills for tier promotion, setting up pre-commit hooks for skill quality, or integrating skill QA into CI."
     },
     {
+      "name": "skillopt-sleep",
+      "source": "../../engineering/skillopt-sleep/skills/skillopt-sleep",
+      "category": "engineering-advanced",
+      "description": "Use when the user wants their Claude agent to self-improve from past usage, asks about a nightly/offline 'sleep' or 'dream' cycle, memory/skill consolidation, or says things like 'make my agent better the more I use it', 'review my past sessions', 'learn my preferences', 'consolidate what you learned', 'run the sleep cycle', or wants to schedule offline self-optimization. Drives the skillopt_sleep engine: harvest past sessions -> mine recurring tasks -> replay offline -> consolidate validated CLAUDE.md and SKILL.md behind a held-out gate."
+    },
+    {
       "name": "slo-architect",
       "source": "../../engineering/skills/slo-architect",
       "category": "engineering-advanced",
@@ -1363,15 +1369,15 @@
     },
     {
       "name": "status",
-      "source": "../../engineering/agenthub/skills/status",
-      "category": "engineering-advanced",
-      "description": "Show DAG state, agent progress, and branch status for an AgentHub session. Use when the user runs /hub:status or asks how the AgentHub agents are doing."
-    },
-    {
-      "name": "status",
       "source": "../../engineering/autoresearch-agent/skills/status",
       "category": "engineering-advanced",
       "description": "Show experiment dashboard with results, active loops, and progress. Use when the user runs /ar:status or asks how an autoresearch experiment is going."
+    },
+    {
+      "name": "status",
+      "source": "../../engineering/agenthub/skills/status",
+      "category": "engineering-advanced",
+      "description": "Show DAG state, agent progress, and branch status for an AgentHub session. Use when the user runs /hub:status or asks how the AgentHub agents are doing."
     },
     {
       "name": "strict-api",
@@ -2179,7 +2185,7 @@
       "description": "Software engineering and technical skills"
     },
     "engineering-advanced": {
-      "count": 82,
+      "count": 83,
       "source": "../../engineering",
       "description": "Advanced engineering skills - agents, RAG, MCP, CI/CD, databases, observability"
     },
